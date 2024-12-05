@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: "Playfair Display", serif;
+    line-height: 1.6;
+    background-color: #F8F3E3;
+    color: #545454;
+}
+
+/* Container Styles */
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 60px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/chandeliers_bg.jpg");
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+    font-style: italic;
+}
+
+main p {
+    padding-bottom: 20px;
+}
+
+header img {
+    border-radius: 10px;
+}
+
+/* Navigation Styles */
+/*Navigation Styles*/
+
+nav {
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    transition: max-height 0.3s ease;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #C0C0C0;
+}
+
+/* Contact Form Styles */
+#form-container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+
+legend {
+    font-weight: bold;
+}
+
+.field {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+/* Form Input Styles */
+
+.form-group {
+    display: flex;
+    align-items: center; /* Align input and label vertically */
+    gap: 2px; /* Minimal space between input and label */
+    margin-bottom: 5px; /* Reduce space between rows */
+}
+
+
+label {
+    margin: 0;
+    font-size: 0.9rem; /* Optional: adjust text size */
+}
+
+
+
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #ccc;
+    color: #333;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #C0C0C0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+nav ul {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #form-container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .flex {
+        display: grid;
+
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        max-height: 0;
+        visibility: hidden;
+    }
+
+    .nav-menu.active {
+        max-height: 100%;
+        visibility: visible;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    header img {
+        display: none;
+    }
+
+    
+}
+
+
+@media (max-width: 500px) {
+
+    #container {
+        width: 99%;
+    }
+
+    .flex {
+        display: grid;
+
+    }
+
+    header img {
+        display: none;
+    }
+
+}

@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*Body Styles*/
+
+body {
+    font-family: "Playfair Display", serif;
+    line-height: 1.6;
+    background-color: #F8F3E3;
+    color: #545454;
+}
+
+/* Container */
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Header Styles */
+
+header {
+    text-align: center;
+    padding: 60px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/chandeliers_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+    font-style: italic;
+}
+
+header img {
+    border-radius: 10px;
+    border: 3px;
+    border-color: #333;
+}
+
+/* Navigation Styles */
+
+/*Navigation Styles*/
+
+nav {
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    transition: max-height 0.3s ease;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #C0C0C0;
+}
+
+/* Main Content */
+
+main {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+#intro {
+    margin-bottom: 20px;
+}
+
+#intro p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #C0C0C0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Styles */
+
+/*
+#banner {
+    background-image: url(../images/chandeliers_bg.jpg);
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+*/
+/* Product of the Week Styles */
+
+#product-of-the-week {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+#product-of-the-week h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Gallery Styles */
+
+#gallery {
+    margin: 20px 0;
+}
+
+#gallery h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+
+
+/* Banner Font Size Adjustment */
+#banner {
+    font-size: 1.5rem;
+}
+
+/* Main content and gallery adjustments */
+main {
+    padding: 15px;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+/* Product of the Week */
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Weekly Sales Grid Adjustment */
+.sales-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    text-align: center;
+}
+
+#weekly-sales h2 {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+/* Text and Font Size Adjustments */
+body {
+    font-size: 1rem;
+}
+
+/* Hamburger Button Styles */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+nav ul {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+p {
+    text-align: justify;
+}
+
+
+section#video-section h3, section#video-section p, section#video-section video, section#audio-section h3, section#audio-section div h4,  section#audio-section div p, section#audio-section div audio {
+    padding: 10px;
+}
+
+div#container main h2 {
+    text-align: center;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #container {
+        width: 95%;
+    }
+
+    /* Header and Banner Adjustments */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #banner {
+        font-size: 1.2rem;
+        padding: 20px 0;
+    }
+
+    /* Product of the Week Responsive Design */
+    .product-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Weekly Sales Responsive Layout */
+    .sales-items {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    /* Font adjustments for smaller screens */
+    body {
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        max-height: 0;
+        visibility: hidden;
+    }
+
+    .nav-menu.active {
+        max-height: 100%;
+        visibility: visible;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    header img {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #container {
+        width: 99%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header img {
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    /* Product and Sale Description Font Size */
+    .product-description, .sale-description {
+        font-size: 0.9rem;
+    }
+
+    /* Weekly Sales Images */
+    .sale-item img {
+        max-width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    p {
+        text-align: justify;
+    }
+}

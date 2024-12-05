@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: "Playfair Display", serif;
+    line-height: 1.6;
+    background-color: #F8F3E3;
+    color: #545454;
+}
+
+/* Container */
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    border-radius: 10px;
+}
+
+
+#banner {
+    
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*Navigation area*/
+
+nav ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+/*Navigation Styles*/
+
+nav {
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    transition: max-height 0.3s ease;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #C0C0C0;
+}
+
+/* Toggle Button */
+#nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 60px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/chandeliers_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+    font-style: italic;
+}
+
+/* Section Styles */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+/* Article and Heading Styles */
+h2, h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+article p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/*Centering titles and justify the contents*/
+
+.team-main h2 {
+    text-align: center;
+}
+
+.team-main p {
+    text-align: justify;
+}
+
+.marketing-section, .executives-section {
+    text-align: center;
+}
+
+.sales-title, .sales-figure {
+    text-align: center;
+}
+
+#centerimage {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Figure and Figcaption Styles */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px; 
+    margin: 20px auto; 
+}
+
+figure img {
+    width: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #545454; 
+    text-align: center;
+}
+
+/* Aside Styles */
+aside {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 5px solid #333;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #C0C0C0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+nav ul {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+section.executives-section, section.marketing-section, div#centerimage  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+     
+     figure {
+        width: 300px; 
+        margin: 20px auto;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    figure figcaption {
+        font-size: 0.9rem;
+    }
+
+    .hamburger {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        max-height: 0;
+        visibility: hidden;
+    }
+
+    .nav-menu.active {
+        max-height: 100%;
+        visibility: visible;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    header img {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    figure {
+        width: 200px;
+    }
+
+    #container {
+        width: 99%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    aside {
+        font-size: 0.8rem;
+    }
+
+    header img {
+        display: none;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    section.executives-section, section.marketing-section, div#centerimage  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

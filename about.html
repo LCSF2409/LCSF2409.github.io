@@ -2,98 +2,78 @@
 <html lang="en">
 <head>
     <!--This website template  was created by: William Lemus Student ID: c0904670-->
-    <title>About</title>
+    <title>About Us</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container">
-        <!--Use the header area for the website name or logo-->
-
         <header>
-            <h1>Forward Fitness Club</h1>
-
-        <a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness club logo" height="220" width="297"></a>
+            <h1>About Chandeliers Inc</h1>
+            <a href="index.html"><img src="images/chandeliers-logo.jpg" alt="chandeliers logo" height="220" width="297"></a>
         </header>
 
-        <!--Use the nav area to add hyperlinks to other pages within the website-->
-        <nav>    
-            <p> <a href="index.html">Home</a> &nbsp; &#9475; &nbsp;
-            <a href="about.html">About us</a> &nbsp; &#9475; &nbsp;
-            <a href="classes.html">Classes</a> &nbsp; &#9475; &nbsp;
-            <a href="nutrition.html">Nutrition</a> &nbsp; &#9475; &nbsp;
-            <a href="contact.html">Contact us</a></p>
+        <!-- Navigation -->
+        <nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Our team</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
         </nav>
 
-        <!--Use the main area to add the main content of the webpage-->
-        <main>
-            
-            <div id="weights">
+        <!-- About Section -->
+        <section class="viewport mobile">
+            <h2>About Chandeliers Inc</h2>
+            <p>Chandeliers Inc: Specializing in luxury lighting solutions, Chandeliers Inc offers an exclusive range of high-quality chandeliers designed to enhance any home décor, from modern minimalism to classic elegance. Our curated selection includes crystal, glass, and metal chandeliers in various styles, sizes, and finishes, ensuring the perfect fit for any room. With a commitment to providing exceptional customer service, we assist clients in making informed choices with personalized consultations, expert design advice, and attention to detail. Whether you're remodeling, redecorating, or simply looking to add a touch of sophistication, Chandeliers Inc is dedicated to illuminating your space with elegance and excellence.</p>
+            <p>This revision adds elements such as diverse materials, styles, and aesthetic options, as well as personalized consultations, which could appeal to customers seeking specialized, luxury lighting solutions. Let me know if you'd like more refinement in a specific direction, like a focus on sustainability, craftsmanship, or exclusive collections.</p>
+        </section>
 
-                <h1>Weights</h1>
-                <img src="images/people-with-weights.jpg" alt="Two people working out with a weight in each hand" height="300" width="450">
-                <p>Our facility includes a weight training area with several weight options. Build lean muscle with weights and improve your core with weight training</p>
-                <ul>
-                    <li>Dumbbells</li>
-                    <li>Kettle bells</li>
-                    <li>Barbells</li>
-                </ul>
-            </div>
+        <!-- Our Story Section -->
+        <section class="viewport tablet">
+            <h2>Our Story</h2>
+            <p>Founded in 2005, Chandeliers Inc started as a small, family-owned business with a deep passion for creating elegant and inspiring lighting solutions. Driven by a commitment to quality and artistic craftsmanship, our founders brought their love for lighting design to life, focusing on details that transform spaces with timeless beauty. From these humble beginnings, we have expanded steadily, evolving into a trusted name in luxury lighting known for our dedication to excellence, innovation, and customer satisfaction.</p>
+            <p>Today, our extensive product range includes a variety of meticulously crafted chandeliers—from intricate, hand-cut crystal pieces to contemporary designs featuring eco-friendly LED technology. Each piece reflects our enduring values of quality and innovation, offering homeowners and designers alike access to an inspiring selection that combines aesthetic appeal with functional elegance. At Chandeliers Inc, we take pride not only in our products but also in fostering long-lasting relationships with our customers, who return time and again for our expertise, exceptional service, and unwavering commitment to their vision.</p>
+            <p>This version highlights Chandeliers Inc growth journey, commitment to customer relationships, and craftsmanship while touching on aspects like eco-friendly options, innovation, and versatile product offerings—all of which enhance the company’s brand identity as a family-owned, quality-driven business. Let me know if you'd like to focus more on any other areas, such as awards, exclusive partnerships, or international reach.</p>
+        </section>
 
+        <!-- Reasons to Shop with Us -->
+        <section class="viewport desktop">
+            <h2>Six Reasons Why You Should Shop with Us</h2>
+            <ol>
+                <li>Expertly crafted lighting solutions</li>
+                <li>Competitive pricing</li>
+                <li>Wide selection of modern and classic designs</li>
+                <li>Personalized design consultations</li>
+                <li>Fast and reliable shipping</li>
+                <li>Excellent customer support</li>
+            </ol>
+        </section>
 
-            <div id="cardio">
+        <!-- Our Guarantee Section -->
+        <section class="viewport desktop">
+            <h2>Our Guarantee</h2>
+            <p>We guarantee the highest quality in every product we offer, and we stand by our products. Should you find any issue, our team is ready to assist. <strong>Your satisfaction is our top priority, and we are committed to making your experience seamless and satisfying.</strong></p>
+        </section>
 
-                <h1>Cardio</h1>
-                <img class="equip"  src="images/people-workingout-machines.jpg"  alt="Cardio Equipment" height="300" width="450">
-                <p> Burn fat through cardio workouts. Experts recommend 150 minutes of cardio each week. We have several equipment choices for your workout.</p>
-                <ul>
-                    <li>Treadmills</li>
-                    <li>Elliptical Machines</li>
-                    <li>Exercise Bikes</li>
-                </ul>
-
-            </div>
-
-            <div id="training">
-                
-                <h1>Personal Training</h1>
-                <img class="equip" src="images/personal-trainer.jpg" alt="Personal Training" height="300" width="450">
-                <p> Our certified personal trainers work with you to help you obtain your fitness goals and track your progress. Personal training has many benefits.</p>
-                <ul>
-                    <li>Accountability</li>
-                    <li>Personalized Program</li>
-                    <li>Consistent Support and Motivation</li>
-                </ul>
-
-            </div>
-
-            <div id="exercises">
-
-                <h1>Common Exercises</h1>
-                <p>The following are common exercises that we encourage our clients to do as part of their daily exercise routine.</p>
-                <dl>
-                    <dt>Burpee</dt>
-                    <dd>Burpees are a great full-body exercise to increase your strength and endurance. Begin in a standing position, drop into a squat and extend your hands forward, kick your feet back and then forward again quickly, and then jump up from a squatted position. </dd>
-
-                    <dt>Plank</dt>
-                    <dd>Planks build your core strength. To perform a plank, get in a push-up position and rest your forearms on the floor. Hold the position as long as you can. </dd>
-
-                    <dt>Mountain Climber</dt>
-                    <dd>Mountain climbers are a good cardio exercise. Place your hands on the floor in a push-up position, bring one knee up to your chest, and then switch as quickly as you can (as though you are climbing a mountain).</dd>
-                </dl>
-
-                <p>For more information about how to stay active, visit the <a href="https://www.hhs.gov/" target="_blank">U.S. Department of Health and Human Services</a>.</p>
-
-            </div>
-        </main>
-
-
-        <!--Use the footer area to add webpage footer content-->
-
-        
+        <!-- Footer -->
         <footer>
-            <p>&copy; Copyright 2021. All Rights Reserved.</p>
-            <p><a href="mailto:forwardfitness@club.net">fordwardfitness@club.net</a></p>
+            <p>&copy; Copyright 2099. All Rights Reserved.</p>
+            <p>Request Information</p>
+            <p>William &nbsp; &nbsp;</p>
+            <p>c0904670 &nbsp; &nbsp;</p>
+            <p><a href="mailto:chandelierscompany@chandeliers.com">Request information for the company</a></p>
         </footer>
     </div>
+    <script src="script/script.js"></script>
 </body>
 </html>
