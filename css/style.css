@@ -150,6 +150,11 @@ footer a:hover {
     border-radius: 10px;
 }
 
+div#intro h1 {
+    text-align: center;
+    padding: 20px;
+}
+
 #product-of-the-week h2 {
     text-align: center;
     color: #333;
